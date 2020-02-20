@@ -1,13 +1,14 @@
-<div class="nav-bar">
+<div class="navbar-minimalist">
   <h1>Cocktails</h1>
   <%= link_to "Add cocktail", new_cocktail_path %>
 </div>
 
-<% @cocktails.each do |cocktail| %>
-  <h3><%= link_to "#{cocktail.name}", cocktail_path(cocktail) %></h3>
-<!--   <ul>
-    <% cocktail.ingredients.each do |ingredient| %>
-    <li><%= ingredient.name %></li>
+<div class="main-container">
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card" style="background-image: url(https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2013/11/mojito-cocktails.jpg?itok=7ZS6egg_)">
+        <%= link_to "#{cocktail.name}", cocktail_path(cocktail) , class: "card-text" %>
+      </div>
     <% end %>
-  </ul> -->
-<% end %>
+  </div>
+</div>
