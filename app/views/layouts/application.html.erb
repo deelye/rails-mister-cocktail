@@ -18,7 +18,12 @@
     <div class="bg-white header">
       <div class="container d-flex justify-content-between header-text">
         <h1><%= link_to "COCKTAILS", cocktails_path %></h1>
-        <p><%= link_to "Add cocktail", new_cocktail_path %> <i class="fas fa-cocktail"></i></p>
+        <span>
+        <%= link_to new_cocktail_path do  %>
+          Add cocktail
+          <%= icon("fas", "cocktail") %>
+        <% end %>
+    </span>
       </div>
     </div>
 

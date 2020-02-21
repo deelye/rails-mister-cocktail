@@ -1,8 +1,19 @@
 <div class="container">
   <div>
     <h1><%= @cocktail.name %></h1>
-    <span><%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail) %> <i class="fas fa-blender"></i></span>
-    <span><%= link_to "Back", cocktails_path %> <i class="fas fa-undo-alt"></i></span>
+    <span>
+      <%= link_to new_cocktail_dose_path(@cocktail) do  %>
+        Add ingredient
+        <%= icon("fas", "blender") %>
+      <% end %>
+    </span>
+    <span>  |  </span>
+    <span>
+      <%= link_to cocktails_path do  %>
+        Back
+        <%= icon("fas", "undo-alt") %>
+      <% end %>
+    </span>
   </div>
 
   <br>

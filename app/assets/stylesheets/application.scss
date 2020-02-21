@@ -14,7 +14,6 @@
 
 body {
   margin: 0;
-  font-family: 'Shadows Into Light', cursive;
   background: #F4F4F4;
   color: white;
   background-image: url("https://images.pexels.com/photos/1737780/pexels-photo-1737780.jpeg?cs=srgb&dl=lighted-string-lights-hanging-1737780.jpg&fm=jpg");
@@ -22,6 +21,10 @@ body {
 
 h1, h3 {
     font-family: 'Shadows Into Light', cursive;
+}
+
+p {
+  font-family: 'Roboto';
 }
 
 body a {
@@ -50,8 +53,13 @@ body a:hover {
   z-index: 10;
 }
 
+.cocktail-img {
+  height: 100%;
+}
+
 .header-text {
-  padding: 5px;
+  padding: 15px;
+  align-items: baseline;
   font-family: 'Shadows Into Light', cursive;
   color: #514950
 }
