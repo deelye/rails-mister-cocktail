@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Restaurant.destroy_all if Rails.env.development?
+Ingredient.destroy_all if Rails.env.development?
 
 Ingredient.create(name: "Rum")
 Ingredient.create(name: "Vodka")
@@ -21,8 +21,9 @@ Ingredient.create(name: "Vermouth")
 Ingredient.create(name: "Aperol")
 Ingredient.create(name: "Brandy")
 Ingredient.create(name: "Whiskey")
-Ingredient.create(name: "Tiple Sec")
+Ingredient.create(name: "Triple Sec")
 Ingredient.create(name: "Grenadine")
+Ingredient.create(name: "Campari")
 
 Ingredient.create(name: "Coke")
 Ingredient.create(name: "Tonic")

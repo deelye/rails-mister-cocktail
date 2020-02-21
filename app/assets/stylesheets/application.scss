@@ -14,23 +14,51 @@
 
 body {
   margin: 0;
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 18px;
+  font-family: 'Shadows Into Light', cursive;
   background: #F4F4F4;
+  color: white;
+  background-image: url("https://images.pexels.com/photos/1737780/pexels-photo-1737780.jpeg?cs=srgb&dl=lighted-string-lights-hanging-1737780.jpg&fm=jpg");
 }
 
-.main-container {
-  display: flex;
-  width: 75vw;
+h1, h3 {
+    font-family: 'Shadows Into Light', cursive;
 }
 
-.navbar-minimalist {
-  height: 70px;
-  background: white;
-  box-shadow: 0px -2px 10px rgba(0,0,0,0.3);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+body a {
+  color: white;
+}
+
+body a:hover {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.header-text a {
+  text-decoration: none;
+  color: #514950;
+}
+
+.header-text a:hover {
+  text-decoration: none;
+  color: black
+}
+
+.header {
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-text {
+  padding: 5px;
+  font-family: 'Shadows Into Light', cursive;
+  color: #514950
+}
+
+.header-text p {
+  margin-top: 16px;
+  margin-right: 10px;
 }
 
 .cards {
@@ -38,20 +66,19 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 50px;
   flex-grow: 1;
-  padding: 15px 10px;
+  padding: 15px 0px;
 }
 
 .card {
   background-size: cover;
   background-position: center;
   height: 320px;
-  width: 320px;
+  width: auto;
   border-radius: 1px;
-  box-shadow: 5px 10px 10px rgba(0,0,0,0.2);
+  box-shadow: 5px 10px 10px rgba(255,255,255,0.2);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 22px;
   color: white;
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
@@ -59,5 +86,17 @@ body {
 
 .card-text {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 25px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: white;
+  font-size: 2.75rem;
+  transition: 0.5s;
 }

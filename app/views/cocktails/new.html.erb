@@ -1,10 +1,10 @@
-<div class="navbar-minimalist">
+<div class="container">
   <h1>Add cocktail</h1>
   <%= link_to "Back", cocktails_path %>
+
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.input :image, label: "Image URL" %>
+    <%= f.submit "Submit cocktail", class: "btn btn-secondary" %>
+  <% end %>
 </div>
-
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.submit "Submit cocktail", class: "btn btn-primary" %>
-<% end %>
-
