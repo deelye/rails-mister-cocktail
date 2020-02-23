@@ -27,6 +27,12 @@ p {
   font-family: 'Roboto';
 }
 
+// .modal-body {
+//   color: black;
+//   box-shadow: 5px 10px 10px rgba(255,255,255,0.2);
+//   background-image: url("https://images.pexels.com/photos/1737780/pexels-photo-1737780.jpeg?cs=srgb&dl=lighted-string-lights-hanging-1737780.jpg&fm=jpg");
+// }
+
 body a {
   color: white;
 }
@@ -38,19 +44,28 @@ body a:hover {
 
 .header-text a {
   text-decoration: none;
-  color: #514950;
+  color: white;
 }
 
 .header-text a:hover {
   text-decoration: none;
-  color: black
+  color: rgb(240, 240, 240)
 }
 
 .header {
   margin-bottom: 20px;
-  position: sticky;
+  // position: sticky;
   top: 0;
   z-index: 10;
+  background-color: white;
+}
+
+.modal-text {
+  color: black;
+}
+
+label {
+  color: black;
 }
 
 .cocktail-img {
@@ -61,13 +76,16 @@ body a:hover {
   padding: 15px;
   align-items: baseline;
   font-family: 'Shadows Into Light', cursive;
-  color: #514950
 }
 
-.header-text p {
-  margin-top: 16px;
-  margin-right: 10px;
+.header-text a {
+  color: black;
 }
+
+// .header-text p {
+//   margin-top: 16px;
+//   margin-right: 10px;
+// }
 
 .cards {
   display: grid;
